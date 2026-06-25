@@ -7,6 +7,7 @@
 body{
     font-family:'Fredoka', sans-serif;
     background:#f4f4f4;
+    color:white;
 }
 
 /* MAIN WRAPPER */
@@ -49,9 +50,10 @@ body{
     transform: translateY(-2px) scale(1.03);
 }
 
+/* HERO */
 .hero{
     text-align:center;
-    padding: 200px 20px 40px;
+    padding:200px 20px 40px;
 }
 
 h1{
@@ -66,29 +68,11 @@ h1{
     margin-bottom:25px;
 }
 
+/* IMAGES */
 .hero img{
     width:450px;
     max-width:90%;
     height:auto;
-}
-
-.hero-img{
-    width:100%;
-    max-width:400px;
-    height:auto;
-    margin:0 auto;
-}
-
-/* TEXT */
-h1{
-    font-family:'Cherry Bomb One', cursive;
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.subtitle{
-    font-family:'Cherry Bomb One', cursive;
-    font-size:14px;
 }
 
 /* SECTIONS */
@@ -97,7 +81,7 @@ section{
     text-align:center;
 }
 
-/* GRID (FIXED — stops stretching) */
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, 140px);
@@ -106,7 +90,7 @@ section{
     margin-top:40px;
 }
 
-/* CARD (SMALL + FIXED SIZE) */
+/* CARD */
 .card{
     background:white;
     width:140px;
@@ -115,6 +99,7 @@ section{
 
     transition:0.25s ease;
     cursor:pointer;
+    color:#f880b0;
 }
 
 .card:hover{
@@ -122,7 +107,6 @@ section{
     box-shadow:0 10px 18px rgba(0,0,0,0.15);
 }
 
-/* SMALL IMAGES (THIS IS THE FIX) */
 .card img{
     width:85px;
     height:85px;
@@ -131,9 +115,6 @@ section{
     margin-bottom:8px;
 }
 
-
-
-/* CARD TEXT */
 .card span{
     font-size:11px;
 }
@@ -146,7 +127,6 @@ section{
     gap:10px;
 }
 
-/* BRAND CARD */
 .brand{
     background:white;
     padding:10px;
@@ -158,7 +138,6 @@ section{
     transform:scale(1.08);
 }
 
-/* SMALL BRAND IMAGES */
 .brand img{
     width:30px;
     height:30px;
@@ -166,48 +145,8 @@ section{
     display:block;
     margin:0 auto;
 }
-/* BENEFITS SECTION */
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:20px;
-    max-width:900px;
-    margin:40px auto 0;
-}
 
-.benefit-card{
-    background:white;
-    color:#f8809e;
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-    transition:0.25s ease;
-}
-
-.benefit-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 18px rgba(0,0,0,0.15);
-}
-
-.icon{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.benefit-card h3{
-    font-family:'Cherry Bomb One', cursive;
-    margin-bottom:10px;
-    font-size:18px;
-}
-
-.benefit-card p{
-    font-size:14px;
-    line-height:1.5;
-}
-.benefit-icon{
-    font-size:30px;
-    /* BENEFITS */
-
+/* BENEFITS GRID */
 .benefits-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
@@ -218,7 +157,7 @@ section{
 
 .benefit-card{
     background:white;
-    color:#f8809e;
+    color:#f880b0;
     padding:25px;
     border-radius:20px;
     text-align:center;
@@ -245,7 +184,7 @@ section{
     font-size:14px;
     line-height:1.5;
 }
-}
+
 /* FOOTER */
 .footer{
     margin-top:auto;
