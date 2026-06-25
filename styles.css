@@ -6,249 +6,101 @@
 
 body{
     font-family:'Fredoka', sans-serif;
-    background:#f4f4f4;
+    color:white;
 }
 
-/* MAIN WRAPPER */
+/* BACKGROUND */
 .container{
     width:100%;
-    max-width:1100px;
-    margin:0 auto;
     min-height:100vh;
-    background:#f880b0;
+    background-color:#f8809e;
 
-    display:flex;
-    flex-direction:column;
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='white' stop-opacity='0.15'/%3E%3Cstop offset='100%25' stop-color='white' stop-opacity='0.03'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M30 45 C12 33 6 21 15 12 C21 6 30 12 30 18 C30 12 39 6 45 12 C54 21 48 33 30 45Z' fill='url(%23g)'/%3E%3C/svg%3E");
+
+    background-repeat:repeat;
+    background-size:80px 80px;
 }
 
-/* TOP BAR */
+/* NAV */
 .top-bar{
+    width:100%;
+    background:#f2c8d6;
+    padding:15px;
     display:flex;
     justify-content:center;
     gap:15px;
-    padding:15px 0;
 }
 
-/* NAV BUTTONS */
-.nav-button{
-    background:#f880b0;
-    color:white !important;
-    text-decoration:none !important;
-
+.top-bar a{
+    background:#f8809e;
+    color:white;
+    text-decoration:none;
     font-family:'Cherry Bomb One', cursive;
-
     padding:10px 20px;
     border-radius:25px;
-
-    display:inline-block;
-
-    transition:0.25s ease;
+    transition:0.2s ease;
 }
 
-.nav-button:hover{
-    transform: translateY(-2px) scale(1.03);
+.top-bar a:hover{
+    transform:scale(1.05);
 }
 
+/* HERO */
 .hero{
     text-align:center;
-    padding: 200px 20px 40px;
+    padding:40px 20px;
+}
+
+.hero img{
+    width:350px;
+    max-width:90%;
+    height:auto;
+    margin-bottom:15px;
 }
 
 h1{
     font-family:'Cherry Bomb One', cursive;
     font-size:28px;
-    margin-bottom:8px;
 }
 
 .subtitle{
     font-family:'Cherry Bomb One', cursive;
     font-size:15px;
-    margin-bottom:25px;
 }
 
-.hero img{
-    width:450px;
-    max-width:90%;
-    height:auto;
-}
-
-.hero-img{
-    width:100%;
-    max-width:400px;
-    height:auto;
-    margin:0 auto;
-}
-
-/* TEXT */
-h1{
-    font-family:'Cherry Bomb One', cursive;
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.subtitle{
-    font-family:'Cherry Bomb One', cursive;
-    font-size:14px;
-}
-
-/* SECTIONS */
+/* SECTION (FIXED PADDING ISSUE) */
 section{
-    padding:70px 20px;
+    padding:80px 20px;
     text-align:center;
 }
 
-/* GRID (FIXED — stops stretching) */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, 140px);
-    justify-content:center;
-    gap:16px;
-    margin-top:40px;
+h2{
+    font-family:'Cherry Bomb One', cursive;
+    font-size:18px;
+    margin-bottom:30px;
 }
 
-/* CARD (SMALL + FIXED SIZE) */
+/* CARDS */
 .card{
     background:white;
-    width:140px;
-    padding:8px;
-    border-radius:12px;
-
-    transition:0.25s ease;
-    cursor:pointer;
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    box-shadow:0 10px 18px rgba(0,0,0,0.15);
-}
-
-/* SMALL IMAGES (THIS IS THE FIX) */
-.card img{
-    width:85px;
-    height:85px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:8px;
-}
-
-
-
-/* CARD TEXT */
-.card span{
-    font-size:11px;
-}
-
-/* BRANDS */
-.brands{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, 70px);
-    justify-content:center;
-    gap:10px;
-}
-
-/* BRAND CARD */
-.brand{
-    background:white;
-    padding:10px;
-    border-radius:18px;
-    transition:0.25s ease;
-}
-
-.brand:hover{
-    transform:scale(1.08);
-}
-
-/* SMALL BRAND IMAGES */
-.brand img{
-    width:30px;
-    height:30px;
-    object-fit:contain;
-    display:block;
-    margin:0 auto;
-}
-/* BENEFITS SECTION */
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:20px;
-    max-width:900px;
-    margin:40px auto 0;
-}
-
-.benefit-card{
-    background:white;
     color:#f8809e;
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-    transition:0.25s ease;
+    padding:15px;
+    margin:0 auto 20px auto;
+    border-radius:15px;
+    max-width:500px;
+    text-align:left;
 }
 
-.benefit-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 18px rgba(0,0,0,0.15);
+.card ul{
+    padding-left:20px;
+    margin-top:10px;
 }
 
-.icon{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.benefit-card h3{
-    font-family:'Cherry Bomb One', cursive;
-    margin-bottom:10px;
-    font-size:18px;
-}
-
-.benefit-card p{
-    font-size:14px;
-    line-height:1.5;
-}
-.benefit-icon{
-    font-size:30px;
-    /* BENEFITS */
-
-.benefits-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:20px;
-    max-width:900px;
-    margin:30px auto 0;
-}
-
-.benefit-card{
-    background:white;
-    color:#f8809e;
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-
-    transition:0.25s ease;
-}
-
-.benefit-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.15);
-}
-
-.icon{
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.benefit-card h3{
-    font-family:'Cherry Bomb One', cursive;
-    margin-bottom:10px;
-}
-
-.benefit-card p{
-    font-size:14px;
-    line-height:1.5;
-}
-}
 /* FOOTER */
 .footer{
-    margin-top:auto;
     height:120px;
-    background:rgba(255,255,255,0.25);
+    background:#f2c8d6;
+    width:100%;
+    margin-top:auto;
 }
